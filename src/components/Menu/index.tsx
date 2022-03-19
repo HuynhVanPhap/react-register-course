@@ -1,7 +1,7 @@
 import { SyntheticEvent } from "react";
 import { useState } from "react";
 import * as Styled from "./styled";
-import { Form } from '@components';
+import { Form, List } from '@components';
 import { MenuItem } from '@components/Menu/MenuItem';
 
 export const Menu = () => {
@@ -15,7 +15,7 @@ export const Menu = () => {
         {
             id: 1,
             label: "List",
-            component: <h1>List Component</h1>
+            component: <List />
         }
     ];
 
@@ -26,7 +26,7 @@ export const Menu = () => {
     return (
         <Styled.MenuLayout>
             <Styled.Paper 
-                elevation={6}
+                elevation={10}
                 sx={{
                     marginBottom: "15px",
                 }}

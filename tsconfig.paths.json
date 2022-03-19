@@ -5,7 +5,9 @@
             "@components/*": ["components/*"],
             "@components": ["components/index.ts"],
             "@types/*": ["types/*"],
-            "@types": ["types/index.ts"]
+            "@types": ["types/index.ts"],
+            "@icons/*": ["icons/*"],
+            "@icons": ["icons/index.ts"]
         }
     }
 }
