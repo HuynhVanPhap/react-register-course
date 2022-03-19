@@ -1,10 +1,14 @@
 import * as Styled from "./styled";
 
-export const Title = () => {
+type Props = {
+    name: string,
+}
+
+export const Title = (props: Props) => {
     return (
         <Styled.Layout>
             <Styled.Typography align="center" variant="h4">
-                Title Component
+                {props.name}
             </Styled.Typography>
         </Styled.Layout>
     );

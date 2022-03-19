@@ -12,7 +12,7 @@ function App() {
           direction="column"
         >
           <Styled.Grid item xs={12}>
-            <Title />
+            <Title name="Add New Student" />
           </Styled.Grid>
 
           <Styled.Grid item xs={12}>
