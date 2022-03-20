@@ -2,6 +2,8 @@ import * as Styled from "./styled";
 import { Select } from "@components/Form/Select";
 import { Input } from "@components/Form/Input";
 import { Checkbox } from "@components/Form/Checkbox";
+import { DefaultButton } from "@components";
+import { SendIcon } from "@icons";
 import { dumbData } from "./dumbData";
 
 export const Form = () => {
@@ -63,6 +65,8 @@ export const Form = () => {
                     label="Learning Leanguage"
                     items={dumbData.checkboxs}
                 />
+
+                <DefaultButton text="Gửi" icon={<SendIcon />} />
             </Styled.FormContent>
         </Styled.FormLayout>
     );
