@@ -1,3 +1,4 @@
+import { useForm } from "react-hook-form";
 import * as Styled from "./styled";
 import { Select } from "@components/Form/Select";
 import { Input } from "@components/Form/Input";
@@ -7,6 +8,13 @@ import { SendIcon } from "@icons";
 import { dumbData } from "./dumbData";
 
 export const Form = () => {
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors }
+    } = useForm();
+
     return (
         <Styled.FormLayout>
             <Styled.FormContent component="form">
@@ -62,7 +70,7 @@ export const Form = () => {
                 />
 
                 <Checkbox 
-                    label="Learning Leanguage"
+                    label="Course"
                     items={dumbData.checkboxs}
                 />
 

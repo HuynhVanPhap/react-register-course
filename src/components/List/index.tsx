@@ -10,10 +10,6 @@ export const List = () => {
                 {students.map((student) => (
                     <Styled.Item elevation={2} key={student.id}>
                         <Styled.TextWrap>
-                            <Styled.TextItem>{student.name}</Styled.TextItem>
-                        </Styled.TextWrap>
-
-                        <Styled.ButtonWrap>
                             <IconButton
                                 isDisabled={true}
                                 icon={ (student.gender === 'male') ? 
@@ -21,6 +17,11 @@ export const List = () => {
                                     <FemaleIcon sx={{ color: "#E05C82" }} /> 
                                 }
                             />
+
+                            <Styled.TextItem>{student.name}</Styled.TextItem>
+                        </Styled.TextWrap>
+
+                        <Styled.ButtonWrap>
                             <IconButton icon={ <RemoveRedEyeIcon /> }/>
                             <IconButton icon={ <ModeEditIcon /> }/>
                             <IconButton icon={ <DeleteIcon /> }/>
